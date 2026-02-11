@@ -69,10 +69,10 @@ Signed perpendicular distance from robot position to path segment.
 ## Control Laws
 
 ### Linear Velocity
-$$v = Kp_{linear} × e_d + Kd_{linear} × d(e_d)/dt$$
+$$v = Kp_{linear} × (e_d + Kd_{linear}) × d(e_d)/dt$$
 
 ### Angular Velocity
-$$omega = Kp_{angular} × e_{θ} + Kd_{angular} × d(e_{θ})/dt$$
+$$omega = Kp_{angular} × (e_{θ} + Kd_{angular}) × d(e_{θ})/dt$$
 
 Velocity saturation ensures bounded behavior.
 
