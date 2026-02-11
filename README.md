@@ -69,10 +69,10 @@ Signed perpendicular distance from robot position to path segment.
 ## Control Laws
 
 ### Linear Velocity
-$$v = Kp_{linear} * e_d + Kd_{linear} * d(e_d)/dt$$
+$$v = Kp_{linear} × e_d + Kd_{linear} × d(e_d)/dt$$
 
 ### Angular Velocity
-$$omega = Kp_{angular} * e_{θ} + Kd_{angular} * d(e_{θ})/dt$$
+$$omega = Kp_{angular} × e_{θ} + Kd_{angular} × d(e_{θ})/dt$$
 
 Velocity saturation ensures bounded behavior.
 
@@ -168,7 +168,7 @@ ros2 topic echo /performance_metrics
 # Dependencies
 
 Ubuntu 22.04  
-ROS 2 Humble  
+ROS2 Humble  
 
 Install:
 
@@ -243,8 +243,8 @@ Arizona State University
 
 The course is affiliated with the  
 **Distributed Robotic Exploration and Mapping Systems (DREAMS) Laboratory**  
+**GitHub:** https://github.com/DREAMS-lab  
 **Website:** https://deepgis.org/dreamslab  
-**GitHub:** https://github.com/DREAMS-lab
 
 The assignment structure, evaluation methodology, and coverage-control framework were inspired by course material and lab research themes in autonomous systems and robotic exploration.
 
@@ -253,6 +253,6 @@ The assignment structure, evaluation methodology, and coverage-control framework
 - Empirical PD tuning effectively stabilizes first-order systems.
 - Cross-track error provides objective performance validation.
 - Quantitative metrics strengthen controller evaluation.
-- ROS 2 interfaces enable modular telemetry expansion.
+- ROS2 interfaces enable modular telemetry expansion.
 
 ---
