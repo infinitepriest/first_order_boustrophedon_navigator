@@ -1,0 +1,8 @@
+avg_abs_cross_track_error: 0.051763
+max_abs_cross_track_error: 0.229187
+samples_used: 862
+Kp_linear: 6.0
+Kd_linear: 0.3
+Kp_angular: 10.0
+Kd_angular: 0.1
+spacing: 0.5
