@@ -5,6 +5,24 @@
 
 ---
 
+## Background
+Boustrophedon patterns (from Greek: "ox-turning", like an ox drawing a plow) are fundamental coverage survey trajectories useful in space exploration and Earth observation. These patterns are useful for:
+
+- **Space Exploration**: Rovers could use boustrophedon patterns to systematically survey areas of interest, ensuring complete coverage when searching for geological samples or mapping terrain. However, due to energy constraints, informative paths are usually optimized, and this results in paths that are sparser than complete coverage sampling, and may still produce high-accuracy reconstructions. 
+  
+- **Earth Observation**: Aerial vehicles employ these patterns for:
+  - Agricultural monitoring and precision farming
+  - Search and rescue operations
+  - Environmental mapping and monitoring
+  - Geological or archaeological surveys
+  
+- **Ocean Exploration**: Autonomous underwater vehicles (AUVs) use boustrophedon patterns to:
+  - Map the ocean floor
+  - Search for shipwrecks or aircraft debris
+  - Monitor marine ecosystems
+  
+The efficiency and accuracy of these surveys depend heavily on the robot's ability to follow the prescribed path with minimal deviation (cross-track error). This assignment simulates these real-world challenges in a 2D environment using a first-order dynamical system (the turtlesim robot).
+
 # Overview
 
 This project implements a **first-order PD-controlled boustrophedon (lawnmower) coverage controller** in ROS2 using `turtlesim`.
@@ -93,13 +111,13 @@ samples_used              = 862
 
 | Metric | What We Wanted | Achieved | Status |
 |--------|----------|----------|--------|
-| Avg {CTE} | < 0.2 | 0.0518 | Achieved. |
-| Max {CTE} | < 0.5 | 0.2292 | Achieved. |
+| Avg (CTE) | < 0.2 | 0.0518 | Achieved. |
+| Max (CTE) | < 0.5 | 0.2292 | Achieved. |
 | Coverage | Complete | Yes | Achieved. |
 | Lane Spacing | Uniform | 0.5 | Achieved. |
 | Samples | Sufficient | 862 | Achieved. |
 
-All grading thresholds satisfied with margin.
+All expectation thresholds satisfied with margin.
 
 # Results
 
@@ -184,11 +202,10 @@ ros2 topic echo /performance_metrics
 
 ```
 first_order_boustrophedon_navigator/
-├── README.md
-├── LICENSE
+├── README.md                               # this file
 ├── first_order_boustrophedon_navigator/
 │   └── __init__.py
-│   └── boustrophedon_controller.py
+│   └── boustrophedon_controller.py         # main file
 │   └── boustrophedon_optimizer.py
 │   └── best_params.txt
 ├── launch/
@@ -199,7 +216,7 @@ first_order_boustrophedon_navigator/
 │   └── boustrophedon_controller
 ├── resource/
 │   └── first_order_boustrophedon_navigator
-├── first_order_boustrophedon_interfaces/   #BONUS
+├── first_order_boustrophedon_interfaces/   # BONUS
 │   ├── msg/
 │       └── PerformanceMetrics.msg
 │   ├── CMakeLists.txt
@@ -211,7 +228,25 @@ first_order_boustrophedon_navigator/
 │   ├── velocity_profiles.png
 │   ├── default_spiral.png
 │   └── tuned_boustrophedon.png
+└── LICENSE
 ```
+
+### **Academic Context & Acknowledgment**
+
+This project was completed as part of:
+
+**SES 598: Space Robotics & AI**  
+Arizona State University  
+
+**Instructor:** Prof. Jnaneshwar Das  
+**GitHub:** https://github.com/darknight-007  
+
+The course is affiliated with the  
+**Distributed Robotic Exploration and Mapping Systems (DREAMS) Laboratory**  
+**Website:** https://deepgis.org/dreamslab  
+**GitHub:** https://github.com/DREAMS-lab
+
+The assignment structure, evaluation methodology, and coverage-control framework were inspired by course material and lab research themes in autonomous systems and robotic exploration.
 
 # Key Takeaways
 
