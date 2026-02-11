@@ -233,7 +233,7 @@ first_order_boustrophedon_navigator/
 
 ### **Academic Context & Acknowledgment**
 
-This project was completed as part of:
+This micro-project was completed as part of:
 
 **SES 598: Space Robotics & AI**  
 Arizona State University  
@@ -246,7 +246,7 @@ The course is affiliated with the
 **GitHub:** https://github.com/DREAMS-lab  
 **Website:** https://deepgis.org/dreamslab  
 
-The assignment structure, evaluation methodology, and coverage-control framework were inspired by course material and lab research themes in autonomous systems and robotic exploration.
+The assignment/micro-project structure, evaluation methodology, and coverage-control framework were inspired by course material and lab research themes in autonomous systems and robotic exploration.
 
 # Key Takeaways
 
