@@ -1,6 +1,6 @@
 # **First-Order Boustrophedon Navigator** (ROS2)
 
-**Author:** Ayushman M. (https://github.com/aymisxx)  
+**Author:** Ayushman M. (https://github.com/infinitepriest)  
 **Platform:** ROS2 Humble + turtlesim
 
 ---
